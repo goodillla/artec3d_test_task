@@ -17,7 +17,6 @@ i = 1
 #сюда будем сохранять номера подозрительных страниц
 warning_pages = []
 
-#for i in range(9995,20000):
 while True:
     url = 'https://s3.eu-central-1.amazonaws.com/qa-web-test-task/%s.html' %str(i)  #
     page = urllib.request.urlopen(url).read()
